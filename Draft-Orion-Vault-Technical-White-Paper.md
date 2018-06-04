@@ -52,11 +52,11 @@ An account of verified user associated with an EOA on blockchain (1:1 relationsh
 
 ### Digital Masterpiece - DM
 
-An ERC721 (NOTE:  A standard interface for non-fungible tokens, also known as deeds. (source)) compliant smart contract representing a non-fungible token. A fully digital asset resulting from digitization of OV User's artwork in a format.
+An ERC721 (NOTE:  A standard interface for non-fungible tokens, also known as deeds. (https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md)) compliant smart contract representing a non-fungible token. A fully digital asset resulting from digitization of OV User's artwork in a format.
 
 ### Orion Vault Coin - OVC
 
-An ERC20 (NOTE:  A standard interface for tokens. (source)) compliant utility token serving as a payment medium on the market. 
+An ERC20 (NOTE:  A standard interface for tokens. (https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)) compliant utility token serving as a payment medium on the market. 
 
 ### Orion Vault Platform - OVP
 
