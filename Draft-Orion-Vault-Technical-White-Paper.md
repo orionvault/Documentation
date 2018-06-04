@@ -1,6 +1,6 @@
 Disclaimer: This Technical White Paper is a Work In Progress and for information purposes only. Orion Vault does not guarantee any degree of accuracy of statements and assumptions nor the conclusion reached in this document.
 
-## Orion Vault Technical White Paper (draft)
+# Orion Vault Technical White Paper (draft)
 
 Version: Draft. Last change: June 4, 2018. Copyright © 2018 Orion Vault
 
