@@ -86,7 +86,7 @@ DM is a non-fungible token standardized as ERC721. This allows for seamless adop
 
 ### Digital Masterpiece Tokenization
 
-An owner can choose whether to be in possession DM or tokenize it into shares. To fully maintain ERC721 standard and keep its token nature tokenization a shares denomination attribute is provided as a number in range from 1 to 100. Initially all DMs issued to the market are denominated with 100%. Tokenization of a DM expressed as 100F goes as follows:
+An owner can choose whether to be in possession of DM in form of a single token or if to tokenize it into shares. To fully maintain ERC721 standard and keep its token nature tokenization a shares denomination attribute is provided as a number in range from 1 to 100. Initially all DMs issued to the market are denominated with 100%. Tokenization of a DM expressed as 100F goes as follows:
 
 * An EOA of 100F calls a tokenization instruction on blockchain to split it into 30% and 70% shares 
 
