@@ -1,11 +1,5 @@
----
-title: Orion Vault Technical White Paper
-layout: post
-author: dawid
-permalink: /orion-vault-technical-white-paper/
-source-id: 1MzPkFsD6GpjcdF7I0QTOiQP4EPBP0ZdrMsvrc6s-L8I
-published: true
----
+Disclaimer: This Technical White Paper is a Work In Progress and for information purposes only. Orion Vault does not guarantee any degree of accuracy of statements and assumptions nor the conclusion reached in this document.
+
 Orion Vault Technical White Paper (draft)
 
 Version: Draft. Last change: June 4, 2018. Copyright © 2018 Orion Vault
