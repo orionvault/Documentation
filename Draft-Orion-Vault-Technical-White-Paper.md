@@ -1,6 +1,12 @@
-Disclaimer: This Technical White Paper is a Work In Progress and for information purposes only. Orion Vault does not guarantee any degree of accuracy of statements and assumptions nor the conclusion reached in this document.
-
-# Orion Vault Technical White Paper (draft)
+---
+title: Orion Vault Technical White Paper
+layout: post
+author: dawid
+permalink: /orion-vault-technical-white-paper/
+source-id: 1MzPkFsD6GpjcdF7I0QTOiQP4EPBP0ZdrMsvrc6s-L8I
+published: true
+---
+Orion Vault Technical White Paper (draft)
 
 Version: Draft. Last change: June 4, 2018. Copyright © 2018 Orion Vault
 
@@ -78,6 +84,22 @@ OVC is an utility token standardized as ERC20. This allows for seamless future a
 
 DM is a non-fungible token standardized as ERC721. This allows for seamless adoption i.e. integrated with existing wallets and listings on so called crypto collectibles market. DM supply is an inherent part of an artwork digitization process and can be seen as a last step of the process. It carries certification-like information on issuer, licence and other metadata.
 
+### Digital Masterpiece Tokenization
+
+An owner can choose whether to be in possession DM or tokenize it into shares. To fully maintain ERC721 standard and keep its token nature tokenization a shares denomination attribute is provided as a number in range from 1 to 100. Initially all DMs issued to the market are denominated with 100%. Tokenization of a DM expressed as 100F goes as follows:
+
+* An EOA of 100F calls a tokenization instruction on blockchain to split it into 30% and 70% shares 
+
+* All subsequent actions happen independently on blockchain
+
+* The 30F token and the other 70F token are created
+
+* 100F token is destroyed
+
+* 30F and 70F tokens get ownership assigned to the EOA initiating the tokenization
+
+Thus tokenizing a DM may incur fees to cover GAS costs on Ethereum Blockchain.
+
 ### Orion Vault Market
 
 OVM can be seen as a set of Smart Contracts facilitating relationships between OV Users. There are in particular two relationships: trade and patronage. Both Smart Contracts are so called multisig contracts that execute upon agreement of 2 OV Users i.e. when their EOAs sign a contract. That means these are externally (thus voluntary) triggered contracts. Another class of contracts is Self Triggering Smart Contracts. There are two OVM built in contracts of this kind: Fee Contract and Carry Commision contract. Upon initial agreement of two EOAs the Patronage contract behaves as self triggering smart contract until expiry condition is met.
@@ -94,13 +116,13 @@ A particular formula i.e. transfer amount and shares as well as more complex cla
 
 ### Fee Smart Contract
 
-A built in contract. The contract deducts an OV Fee from each trade on the blockchain market payable by the site receiving OVC. Although selling DMs for proverbial "$1" is discouraged as negatively affects provenance and eventually asset value provisions in contract state as follows:
+A built in contract. The contract automatically deducts an OV Fee from each trade on the blockchain market payable by the site receiving OVC. Although selling DMs for proverbial "$1" is discouraged as negatively affects provenance and eventually asset value provisions in contract state as follows:
 
 * t.b.d.
 
 ### Carry Commision Smart Contract
 
-A built in contract. The contract deducts a carry commision from the OV Fee and transfer it to DMs issuer EOA.
+A built in contract. The contract automatically deducts a carry commision from the OV Fee and transfer it to DMs issuer EOA.
 
 ### Donation Smart Contract
 
@@ -110,7 +132,11 @@ A special case of a trade contract where a DM is "sold" for zero OVC.
 
 # Digitization
 
-OVP, OV User, DM.
+This is a process spanning through audit, legal and IT procedures available to OV Users. The OV User submits a request to digitize an artwork using OVP and providing a regular mobile camera picture of it, estimated value and provenance information (if known). Semi-automated algorithm triages requests by transparent criteria and gives an estimated timeline for assisted digitization to the requesting OV User.
+
+Upon successful provenance and authenticity audit,  a legal team offers different certification options that may incur extra commitments from the issuer e.g. allowing the certificate owner to the physical artwork's private viewing. The next step is to create a gigapixel scan of the artwork and to encrypt and store the encrypted image both on OV servers and third party clouds providers.
+
+In effect a brand new Digital Masterpiece is generated and can be seen as a certificate and fully digital asset. The DM is associated with OV User's EOA on blockchain which concludes the process. 
 
 # Client applications
 
