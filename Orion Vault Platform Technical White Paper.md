@@ -52,7 +52,7 @@ Technological ecosystem and legal framework enabling an infrastructure for digit
 
 * A cloud storage (3rd party) that holds an encrypted digital art available to the owner.
 
-![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
+![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
 
 #### Fig. 1 - Orion Vault Platform (gold color) in context of  client (green) and server (red) third party stack.
 
