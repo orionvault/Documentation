@@ -156,7 +156,7 @@ After installing an app on a mobile device a user is ready to explore digital ar
 
 To be able to participate in the market the user needs to provide an Ethereum account address and identity proof (a combination of passport, utility bill etc.). After successful verification the user is sent a confirmation email. Onwards the user can fully benefit from the platform while still can chose to remain anonymous not to reveal any personal data (e.g. name, country).
 
-#### Fig. 4. - T.B.D.
+#### Fig. 6. - T.B.D.
 
 ### Deploy a piece of digital art to the OVP (DApp)
 
@@ -164,13 +164,13 @@ During a registration process a user can apply for special credentials allowing 
 
 An eligible (verified as such) user can deploy an art to the market. The user is required to provide a file of original high quality media, its thumbnail (if the media provided is not image) and various metadata including the piece's title, author’s name etc. After required data is uploaded the user is prompted to sign a transaction via MetaMask in order to deploy OVM token to the blockchain. This act makes the user eligible to benefit from a carry commision from each transaction in which the token is involved.  
 
-#### Fig. 5. - T.B.D.
+#### Fig. 7. - T.B.D.
 
 ### Set for sale/set not for sale (mobile & DApp)
 
 Each OVM token in a user's collection can be set for sale. In order to do that the user has to set a price in Ether, create an entry in OVA auction contract,  and approve the OVME escrow contract associated with the token to govern its sale. To make it happen signing a blockchain transaction via MetaMask is required. Similarly to cancel sale and take the OVM token off the auction another MetaMask prompted transaction signature is required. Only owner of the token is eligible to sign transactions.  
 
-#### Fig. 6. - T.B.D.
+#### Fig. 8. - T.B.D.
 
 ### Buy (mobile & DApp)
 
@@ -180,7 +180,7 @@ As all requirements are met the contract cancels auction (removes an entry in OV
 
 The transaction can be initiated either through the DApp via MetaMask or any wallet either mobile, desktop or hardware.
 
-#### Fig. 7. - T.B.D.
+#### Fig. 9. - T.B.D.
 
 ### Obtain a file of a digital art piece (mobile & DApp)
 
@@ -188,5 +188,5 @@ During deployment process an original high quality media gets password encrypted
 
 Upon token ownership transfer a file under the cloud link associated with the token changes as gets re-encrypted with a password that belongs to the new owner.
 
-#### Fig. 8. - T.B.D.
+#### Fig. 10. - T.B.D.
 
