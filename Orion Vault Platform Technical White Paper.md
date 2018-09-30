@@ -52,7 +52,7 @@ Technological ecosystem and legal framework enabling an infrastructure for digit
 
 * A cloud storage (3rd party) that holds an encrypted digital art available to the owner.
 
-![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
+![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
 
 #### Fig. 1 - Orion Vault Platform (gold color) in context of  client (green) and server (red) third party stack.
 
@@ -76,7 +76,7 @@ A contract that manage OVM market activities. When an OVM token is set for sale 
 
 OVU are whitelists holding Ethereum addresses. A whitelist denotes a certain role an address is eligible to exercise eg. deploy OVMs or trade OVMs on the market.
 
-![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_1.png)
+![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_1.png)
 
 #### Fig. 2 - Relationships mapping  between Orion Vault smart contract entries (tokens). OVUsers contract (gold color) is governed by OV and contains accounts of verified users.  Other contracts  (yellow) are independent of Orion Vault and trigger either upon user signing a transaction or trigger as a result of another contract's call.
 
@@ -88,7 +88,7 @@ Python is used as a main programming language, taking advantage of Django framew
 
 Different technologies are being used to contribute to backend performance and maintenance like Redis for cache mechanisms and Celery framework for asynchronous tasks.
 
-![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_2.png)
+![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_2.png)
 
 #### Fig. 3 - Architecture of Orion Vault Backend public interface specific code (green color) all dependent on  Orion Vault core code (yellow) with internal functions (gold). External services (red).
 
@@ -108,7 +108,7 @@ http://test-platform-api.orionvault.com/docs/
 
 A standalone client available for Android and iOS. The mobile app is built in Visual Studio 2017 using the Xamarin Forms tools. This approach allow us to code the business logic once in C#,  and to share that code between Android and iOS, while at the same time using native components and libraries from both platforms.
 
-![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_3.png)
+![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_3.png)
 
 #### Fig. 4 - Architecture of Orion Vault Mobile App with Android and iOS specific code (green color) both dependent on  Orion Vault developed code (yellow)  with access to Service Layer (gold). Build on Xamarin Forms with C#.
 
@@ -146,7 +146,7 @@ Between the website and MetaMask the DApp contains smart contracts ABI (Applicat
 
 The Website itself is built with Angular framework and TypeScript using Material Design libraries for UI.
 
-#### ![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_4.png)Fig. 5 - Orion Vault DApp constituted by a website and a smart contracts ABI with use of third party JS libs (yellow, light green) in context of its execution environment (green): MetaMask speaking to OV Smart Contracts on the blockchain and a browser communicating with Orion Vault Backend.
+#### ![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_4.png)Fig. 5 - Orion Vault DApp constituted by a website and a smart contracts ABI with use of third party JS libs (yellow, light green) in context of its execution environment (green): MetaMask speaking to OV Smart Contracts on the blockchain and a browser communicating with Orion Vault Backend.
 
 # Use Cases
 
