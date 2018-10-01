@@ -130,6 +130,11 @@ The underlying tools and programming language the app is build on.
 
 Programmed in C#, it represents the core of the application, contain the business logic, access to services and the application's UI
 
+#### User Interface
+UI of applications is defined with XAML (Extensible Application Markup Language). XAML is part of Xamarin.Forms and it is used to define user interfaces using all the Xamarin.Forms views, layouts, and pages, as well as custom classes. It compiles to native UI controls for a specific platform. 
+
+The underlying application architecture pattern is MVVM (Model-View-ViewModel. The pattern enforces a separation between three software layers — the XAML user interface called the View; the underlying data called the Model; and an intermediary between the View and the Model called the ViewModel. 
+
 ### Android and iOS App
 
 Contains platform specific code for Android and iOS
