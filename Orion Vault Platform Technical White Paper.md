@@ -52,7 +52,7 @@ Technological ecosystem and legal framework enabling an infrastructure for digit
 
 * A cloud storage (3rd party) that holds an encrypted digital art available to the owner.
 
-![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
+![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_0.png)
 
 #### Fig. 1 - Orion Vault Platform (gold color) in context of  client (green) and server (red) third party stack.
 
@@ -76,7 +76,7 @@ A contract that manage OVM market activities. When an OVM token is set for sale 
 
 OVU are whitelists holding Ethereum addresses. A whitelist denotes a certain role an address is eligible to exercise eg. deploy OVMs or trade OVMs on the market.
 
-![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_1.png)
+![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_1.png)
 
 #### Fig. 2 - Relationships mapping  between Orion Vault smart contract entries (tokens). OVUsers contract (gold color) is governed by OV and contains accounts of verified users.  Other contracts  (yellow) are independent of Orion Vault and trigger either upon user signing a transaction or trigger as a result of another contract's call.
 
@@ -88,7 +88,7 @@ Python is used as a main programming language, taking advantage of Django framew
 
 Different technologies are being used to contribute to backend performance and maintenance like Redis for cache mechanisms and Celery framework for asynchronous tasks.
 
-![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_2.png)
+![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_2.png)
 
 #### Fig. 3 - Architecture of Orion Vault Backend public interface specific code (green color) all dependent on  Orion Vault core code (yellow) with internal functions (gold). External services (red).
 
@@ -108,7 +108,7 @@ http://test-platform-api.orionvault.com/docs/
 
 A standalone client available for Android and iOS. The mobile app is built in Visual Studio 2017 using the Xamarin Forms tools. This approach allow us to code the business logic once in C#,  and to share that code between Android and iOS, while at the same time using native components and libraries from both platforms.
 
-![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_3.png)
+![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_3.png)
 
 #### Fig. 4 - Architecture of Orion Vault Mobile App with Android and iOS specific code (green color) both dependent on  Orion Vault developed code (yellow)  with access to Service Layer (gold). Build on Xamarin Forms with C#.
 
@@ -146,7 +146,7 @@ Between the website and MetaMask the DApp contains smart contracts ABI (Applicat
 
 The Website itself is built with Angular framework and TypeScript using Material Design libraries for UI.
 
-#### ![image alt text](https://raw.githubusercontent.com/orionvault/Documentation/master/public/TFa0jFKOfUa04lXuYdZEpw_img_4.png)Fig. 5 - Orion Vault DApp constituted by a website and a smart contracts ABI with use of third party JS libs (yellow, light green) in context of its execution environment (green): MetaMask speaking to OV Smart Contracts on the blockchain and a browser communicating with Orion Vault Backend.
+#### ![image alt text]({{ site.url }}/public/TFa0jFKOfUa04lXuYdZEpw_img_4.png)Fig. 5 - Orion Vault DApp constituted by a website and a smart contracts ABI with use of third party JS libs (yellow, light green) in context of its execution environment (green): MetaMask speaking to OV Smart Contracts on the blockchain and a browser communicating with Orion Vault Backend.
 
 # Use Cases
 
@@ -156,21 +156,15 @@ After installing an app on a mobile device a user is ready to explore digital ar
 
 To be able to participate in the market the user needs to provide an Ethereum account address and identity proof (a combination of passport, utility bill etc.). After successful verification the user is sent a confirmation email. Onwards the user can fully benefit from the platform while still can chose to remain anonymous not to reveal any personal data (e.g. name, country).
 
-#### Fig. 6. - T.B.D.
-
 ### Deploy a piece of digital art to the OVP (DApp)
 
 During a registration process a user can apply for special credentials allowing for deployment of digital art pieces to the platform. More thorough process of verification is required to check if the user is an artists or an art institution (e.g. gallery) with capabilities of providing pieces of fine digital art.
 
-An eligible (verified as such) user can deploy an art to the market. The user is required to provide a file of original high quality media, its thumbnail (if the media provided is not image) and various metadata including the piece's title, author’s name etc. After required data is uploaded the user is prompted to sign a transaction via MetaMask in order to deploy OVM token to the blockchain. This act makes the user eligible to benefit from a carry commision from each transaction in which the token is involved.  
-
-#### Fig. 7. - T.B.D.
+An eligible (verified as such) user can deploy an art to the market. The user is required to provide a file of original high quality media, its thumbnail (if the media provided is not image) and various metadata including the piece's title, author’s name etc. After required data is uploaded the user is prompted to sign a transaction via MetaMask in order to deploy OVM token to the blockchain. This act makes the user eligible to benefit from a carry commision from each transaction in which the token is involved.
 
 ### Set for sale/set not for sale (mobile & DApp)
 
 Each OVM token in a user's collection can be set for sale. In order to do that the user has to set a price in Ether, create an entry in OVA auction contract,  and approve the OVME escrow contract associated with the token to govern its sale. To make it happen signing a blockchain transaction via MetaMask is required. Similarly to cancel sale and take the OVM token off the auction another MetaMask prompted transaction signature is required. Only owner of the token is eligible to sign transactions.  
-
-#### Fig. 8. - T.B.D.
 
 ### Buy (mobile & DApp)
 
@@ -180,13 +174,9 @@ As all requirements are met the contract cancels auction (removes an entry in OV
 
 The transaction can be initiated either through the DApp via MetaMask or any wallet either mobile, desktop or hardware.
 
-#### Fig. 9. - T.B.D.
-
 ### Obtain a file of a digital art piece (mobile & DApp)
 
 During deployment process an original high quality media gets password encrypted and uploaded to cloud. Also the media's hash gets created through a hashing function and becomes a part of its token metadata on the blockchain. The media file is exposed under a permanent, publicly accessible link of format https://_ov_cloud_ /{hash}. Visiting the link starts a file download. Only a user that owns the token and its associated file can decrypt the file using a password available in the user’s OVP account.
 
 Upon token ownership transfer a file under the cloud link associated with the token changes as gets re-encrypted with a password that belongs to the new owner.
-
-#### Fig. 10. - T.B.D.
 
